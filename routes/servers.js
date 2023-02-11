@@ -27,12 +27,12 @@ const handler = async (req, res) => {
       console.log(server);
 
       try {
-        const response = await axios({
-          url: `${server}${url}`,
-          method: method,
-          headers: headers,
-          data: body,
-        });
+        // const response = await axios({
+        //   url: `${server}${url}`,
+        //   method: method,
+        //   headers: headers,
+        //   data: body,
+        // });
 
         console.log({ data: near.location, base_url: server });
 
