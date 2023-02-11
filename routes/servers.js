@@ -9,11 +9,11 @@ const axios = require('axios');
 const handler = async (req, res) => {
   // Destructure following properties from request object
   const { method, url, headers } = req;
-  console.log(url);
+  console.log(req.body.data);
 
   axios
     .get(
-      `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.API_KEY}&ip_address=${req.body.ip}`
+      `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.API_KEY}&ip_address=${req.body.data}`
     )
     .then(async (response) => {
       const { getServer } = require('./nearestserver');
