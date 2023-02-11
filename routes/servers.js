@@ -13,7 +13,7 @@ const handler = async (req, res) => {
 
   axios
     .get(
-      `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.API_KEY}&ipaddress=${req.body.ip}`
+      `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.API_KEY}&ip_address=${req.body.ip}`
     )
     .then(async (response) => {
       const { getServer } = require('./nearestserver');
