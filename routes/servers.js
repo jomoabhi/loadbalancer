@@ -20,10 +20,10 @@ const handler = async (req, res) => {
 
       const near = getServer(response.data.latitude, response.data.longitude);
       const server = near.url;
-      var body = {
-        ...req.body,
-        ...near,
-      };
+      // var body = {
+      //   ...req.body,
+      //   ...near,
+      // };
       console.log(server);
 
       try {
