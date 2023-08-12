@@ -5,7 +5,7 @@ router.get('', (req, res) => {
   //   if (req.body.latitude) {
   //     handler(req, res);
   //   }
-  return res.render('home', { server_no: 04 });
+  return res.render('home', { server_no: '04' });
 });
 
 module.exports = router;

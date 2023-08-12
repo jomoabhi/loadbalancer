@@ -3,7 +3,7 @@ const router = require('express').Router();
 const IP = require('ip');
 
 const axios = require('axios');
-var server, code1, location;
+
 var data = require('./serverInformation/serversInfo').data;
 
 //Array to store current server of that location

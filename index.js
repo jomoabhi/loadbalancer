@@ -18,7 +18,7 @@ app.use('/', require('./routes/home'));
 //route to calculate nearest server
 app.use('/nearestServer', require('./routes/servers'));
 // Listen on PORT 8080
-const PORT = process.env.PORT || 8080;
+const PORT = 3001;
 app.listen(PORT, (err) => {
   err
     ? console.log('Failed to listen on PORT 8080')
